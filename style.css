@@ -5,26 +5,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+
 }
 body {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background: #dddfeb;
   background-image: url(./home.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  overflow: hidden;
 }
+
 .container {
   position: relative;
   width: 100%;
+  margin-top: 60px;
   max-width: 400px;
   background: #2A3236;
-  padding: 30px;
-  overflow: hidden;
+  padding:  30px;
+  
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -53,7 +55,7 @@ select {
   font-size: 14px;
 }
 .start-screen .btn {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 .hide {
   display: none;
@@ -65,7 +67,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-bottom: 30px;
+ 
 }
 .timer .progress {
   position: relative;
@@ -196,6 +198,60 @@ select {
   font-weight: 500;
   margin-bottom: 120px;
 }
+.btn.restart{
+  margin-bottom: 8px;
+ }
+ .btn.info a{
+   text-decoration: none;
+   color: #fff;
+ }
+
+ .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  z-index: 10; /* Ensures navbar is above other content */
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  /* padding-right: 30px; */
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+nav  img {
+  width: 100px;
+
+}
+/* Add padding to the top of the main content to avoid overlap with the navbar */
+.container {
+  padding-top: 30px; /* Adjust this value based on navbar height */
+}
+
+
 
 @media (max-width: 468px) {
   .container {
@@ -204,3 +260,7 @@ select {
     border-radius: 0;
   }
 }
+
+
+
+

@@ -15,6 +15,16 @@
     <title>Quiz App</title>
   </head>
   <body>
+    <nav class="navbar">
+      <div class="logo">
+       <img src="./logo.png" alt="logo" />
+        
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="start-screen">
         <h1 class="heading">Quiz App</h1>
@@ -93,10 +103,12 @@
             <span class="total-score">/10</span>
           </div>
         </div>
-        <button class="btn restart">Restart Quiz</button>
+        <div>
+          <button class="btn restart">Restart Quiz</button>
+          <button class="btn info"><a href="www.google.com">Go to Info</a></button>
+        </div>
       </div>
-    </div>
-
+    </div>   
     <script src="script.js"></script>
   </body>
 </html>
