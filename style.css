@@ -43,7 +43,7 @@ label {
   margin-bottom: 10px;
   color: #fff;
 }
-select {
+select,input {
   width: 100%;
   padding: 10px;
   border: none;
@@ -54,6 +54,31 @@ select {
   color: #1f2847;
   font-size: 14px;
 }
+.info{
+  color: #fff;
+  padding: 8px;
+}
+
+.info .num{
+  color: #f00;
+  font-weight: 700;
+}
+
+.info #easy{
+  color: #33a442;
+  font-weight: 700;
+}
+
+.info #medium{
+  color: #f6ee13db;
+  font-weight: 700;
+}
+
+.info #hard{
+  color: #ff0000;
+  font-weight: 700;
+}
+
 .start-screen .btn {
   margin-top: 10px;
 }
@@ -67,7 +92,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
- 
+
 }
 .timer .progress {
   position: relative;
